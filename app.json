@@ -7,7 +7,7 @@
         "telegram bot",
         "pyrogram"
     ],
-    "repository": "https://github.com/KaalOS/BanAllBot",
+    "repository": "https://github.com/LeeyooMuzic/kallpanall",
     "env": {
         "API_ID": {
             "description": "Your Api ID",
