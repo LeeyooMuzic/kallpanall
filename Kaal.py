@@ -124,3 +124,5 @@ async def restart(e):
 async def start(event):
   await event.reply(
 """ᴜɴɴᴀ ʀᴀ ᴘᴜᴋᴀ 😒""")
+
+aditya.run_until_disconnected()
