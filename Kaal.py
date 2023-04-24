@@ -120,9 +120,47 @@ async def restart(e):
 
 
 #start
-@aditya.on(events.NewMessage(pattern="^/gxd$"))
+@aditya.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply(
-"""ᴜɴɴᴀ ʀᴀ ᴘᴜᴋᴀ 😒""")
+"""────「 [𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐀𝐜𝐭𝐢𝐨𝐧](https://telegra.ph/file/ba38ba16fdf2f6e45fa4c.png) 」────
+*Hᴇʏ !!,*
+Wᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴄᴛɪᴏɴ ʙᴏᴛ's ᴍᴇɴᴜ. \n I ᴄᴀɴ ʙᴀɴ ᴀʟʟ ᴍᴇᴍʙᴇʀs ɪɴ ɢʀᴏᴜᴘs ᴀɴᴅ ᴄʜᴀɴɴᴇʟs.
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+‣ Managed By - @III_KAAL_III ❥︎
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+➛ Nᴇᴇᴅ Hᴇʟᴘ /help ××
+""",
+    buttons=(
+                      [
+                         Button.url('📣 ᴜᴘᴅᴀᴛᴇs', 'https://t.me/KaalWare'), 
+                         Button.url('sᴜᴘᴘᴏʀᴛ ⭐', 'https://t.me/Sanki_World'), 
+                      ], 
+                      [
+                        Button.url('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', 'https://t.me/KaalActionBot?startgroup=true'),   
+                      ]
+                   ), 
+                    link_preview=False
+                   )
+
+#help
+@aditya.on(events.NewMessage(pattern="^/help$"))
+async def help(event):
+  helptext = "**Telegram Action Bot's Help Menu**\n\n**Commands:**\n\n `!ping` - Check Ping Status Bot.. \n\n `!online` - For Check Bot Alive Or Not. \n\n `!fuckoff` - For Ban All Members In Group.\n\n **Owner Commands:**\n\n `!leave` - For Leave Chat Group From Bot.\n\n `!restart` - For Restart Your Bot."
+  await event.reply(helptext,
+                    buttons=(
+                      [
+                         Button.url('📣 ᴜᴘᴅᴀᴛᴇs', 'https://t.me/KaalWare'), 
+                         Button.url('sᴜᴘᴘᴏʀᴛ ⭐', 'https://t.me/Sanki_World'), 
+                      ], 
+                      [
+                        Button.url('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', 'https://t.me/KaalActionBot?startgroup=true'),   
+                      ]
+                   ), 
+                    link_preview=False
+                   )
+
+print("\n\n")
+print("Bᴏᴛ Dᴇᴘʟᴏʏᴍᴇɴᴛ Sᴜᴄᴄᴇss!! Iғ Aɴʏ Pʀᴏʙʟᴇᴍ Fᴀᴄɪɴɢ Tʜᴇɴ Cᴏɴᴛᴀᴄᴛ @III_KAAL_III")
 
 aditya.run_until_disconnected()
